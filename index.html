@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="張佳涵 Chia-Han Chang：消費者行為、消費心理、行銷與智慧財產研究。">
+<title>張佳涵｜Chia-Han Chang</title>
+<style>
+:root{
+  --navy:#172d43;
+  --ink:#233447;
+  --muted:#65717e;
+  --accent:#a74731;
+  --line:#dce2e8;
+  --paper:#fff;
+  --soft:#f3f6f9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Arial,"Microsoft JhengHei","PingFang TC",sans-serif;
+  font-size:16px;line-height:1.85;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+button,a{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible{
+  outline:3px solid var(--accent);outline-offset:5px;
+}
+.wrap{width:min(1100px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;min-height:76px;flex-wrap:wrap;padding:12px 0;
+}
+.brand{font-weight:700;color:var(--navy);letter-spacing:.02em}
+nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--ink);font-size:14px}
+.lang{
+  background:white;border:1px solid var(--line);border-radius:4px;
+  padding:6px 11px;font:inherit;font-size:14px;cursor:pointer;
+}
+.hero{
+  background:var(--navy);color:white;padding:78px 0 70px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.55fr 1fr;
+  gap:60px;align-items:center;
+}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:.2em;
+  font-size:13px;color:#c9d6e2;
+}
+h1{
+  margin:14px 0 10px;font-size:clamp(34px,5vw,58px);
+  letter-spacing:.02em;line-height:1.2;
+}
+.english-name{
+  font-family:Georgia,serif;font-size:clamp(22px,3vw,32px);
+  color:#d8e4ef;margin-bottom:22px;
+}
+.hero p{color:#dce6ef;max-width:620px}
+.hero-note{
+  border-left:2px solid #b96953;padding-left:26px;
+}
+.hero-note strong{display:block;color:white;margin-bottom:8px}
+.hero-note p{font-size:15px;margin:0 0 20px}
+.hero-link{
+  display:inline-block;border:1px solid #879caf;color:white;
+  padding:9px 18px;margin-top:12px;border-radius:3px;
+}
+section.content{padding:64px 0;border-bottom:1px solid var(--line)}
+.section-grid{
+  display:grid;grid-template-columns:210px minmax(0,1fr);gap:48px;
+}
+.section-label{
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;
+}
+h2{font-size:27px;line-height:1.35;margin:10px 0 0;color:var(--navy)}
+h3{font-size:18px;line-height:1.55;margin:0 0 7px}
+p{margin:0 0 16px}
+.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.tag{
+  border:1px solid var(--line);padding:5px 12px;border-radius:3px;
+  background:var(--soft);font-size:14px;
+}
+.timeline{display:grid;gap:24px}
+.entry{padding-left:20px;border-left:2px solid var(--line)}
+.date{font-size:14px;color:var(--accent);font-weight:700}
+.entry p{color:var(--muted);margin:4px 0 0}
+.subheading{
+  margin:34px 0 20px;font-size:17px;
+  padding-bottom:9px;border-bottom:1px solid var(--line);
+}
+.subheading:first-child{margin-top:0}
+.publication{
+  padding:21px 0;border-bottom:1px solid var(--line);
+}
+.publication:first-child{padding-top:0}
+.publication:last-child{border-bottom:0}
+.pub-meta{font-size:14px;color:var(--muted);margin:7px 0 0}
+.authors{font-size:14px;color:var(--muted);margin-bottom:7px}
+.badge{
+  display:inline-block;font-size:12px;padding:2px 8px;
+  color:var(--accent);background:#faf0ec;margin-left:5px;
+}
+.course-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.course{padding:20px;background:var(--soft);border-top:2px solid var(--navy)}
+.course p{font-size:14px;color:var(--muted);margin:8px 0 0}
+.collaboration{margin-bottom:25px}
+.collaboration:last-child{margin-bottom:0}
+.contact{background:var(--soft)}
+.contact a{font-size:20px;overflow-wrap:anywhere}
+footer{padding:26px 0;color:var(--muted);font-size:13px}
+.en{display:none}
+html[lang="en"] .zh{display:none}
+html[lang="en"] .en{display:revert}
+@media(max-width:760px){
+  .hero{padding:48px 0}
+  .hero-grid,.section-grid{grid-template-columns:1fr;gap:26px}
+  .hero-note{margin-top:8px}
+  section.content{padding:42px 0}
+  nav{gap:12px}
+  .course-grid{grid-template-columns:1fr}
+  .header-inner{gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">CHIA-HAN CHANG</a>
+    <nav aria-label="Main navigation">
+      <a href="#about"><span class="zh">簡介</span><span class="en">About</span></a>
+      <a href="#experience"><span class="zh">學經歷</span><span class="en">Experience</span></a>
+      <a href="#research"><span class="zh">研究</span><span class="en">Research</span></a>
+      <a href="#teaching"><span class="zh">課程</span><span class="en">Teaching</span></a>
+      <a href="#contact"><span class="zh">聯絡</span><span class="en">Contact</span></a>
+      <button class="lang" id="language" type="button" aria-label="Switch to English">English</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Consumer Behavior · Marketing · Innovation</div>
+        <h1><span class="zh">張佳涵</span><span class="en">Chia-Han Chang</span></h1>
+        <div class="english-name">
+          <span class="zh">Chia-Han Chang, Ph.D.</span>
+          <span class="en">Ph.D. in Business Administration</span>
+        </div>
+        <p class="zh">以消費者心理理解市場，結合工程、智慧財產與行銷研究，探索情境線索如何影響消費者的認知、情緒與決策。</p>
+        <p class="en">My research examines how contextual cues shape consumer cognition, emotion, and decision making, connecting consumer psychology with engineering, intellectual property, and marketing.</p>
+        <a class="hero-link" href="#research">
+          <span class="zh">研究與著作</span><span class="en">Research & Publications</span>
+        </a>
+      </div>
+      <aside class="hero-note">
+        <strong class="zh">研究核心</strong>
+        <strong class="en">Research Focus</strong>
+        <p class="zh">消費者行為與消費心理<br>科技與消費行為<br>實驗設計與因果推論</p>
+        <p class="en">Consumer behavior and psychology<br>Technology and consumption<br>Experimental design and causal inference</p>
+        <strong class="zh">跨領域背景</strong>
+        <strong class="en">Interdisciplinary Background</strong>
+        <p class="zh">企業管理博士・管理碩士・工學士<br>十餘年專利與技術分析實務經驗</p>
+        <p class="en">Business administration, management, and engineering<br>Over a decade of professional experience in patents and technical analysis</p>
+      </aside>
+    </div>
+  </div>
+
+  <section class="content" id="about">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">01 / About</div>
+        <h2><span class="zh">個人簡介</span><span class="en">About Me</span></h2>
+      </div>
+      <div>
+        <p class="zh">我於2025年取得國立中山大學企業管理博士學位，主修行銷。研究主要關注消費者行為與消費心理，以實驗設計與實證方法探討情境線索、心理反應及其行為後果。</p>
+        <p class="en">I earned my Ph.D. in Business Administration, specializing in marketing, from National Sun Yat-sen University in 2025. My research focuses on consumer behavior and psychology, using experimental and empirical methods to examine contextual cues, psychological responses, and behavioral outcomes.</p>
+        <p class="zh">我的學術訓練涵蓋工程、管理與行銷，並具備十餘年專利工程師經驗。2024至2025年間，曾赴加拿大 Simon Fraser University 的 Beedie School of Business 進行訪問研究。希望透過跨領域視角，連結學術理論、數據分析與企業實務。</p>
+        <p class="en">My training spans engineering, management, and marketing, complemented by over a decade of experience as a patent engineer. From 2024 to 2025, I conducted visiting research at the Beedie School of Business, Simon Fraser University, Canada. I seek to connect academic theory, data analysis, and industry practice through an interdisciplinary perspective.</p>
+        <div class="tags">
+          <span class="tag"><span class="zh">消費者行為</span><span class="en">Consumer Behavior</span></span>
+          <span class="tag"><span class="zh">消費心理</span><span class="en">Consumer Psychology</span></span>
+          <span class="tag"><span class="zh">智慧財產與行銷</span><span class="en">IP & Marketing</span></span>
+          <span class="tag"><span class="zh">AI與市場應用</span><span class="en">AI & Market Applications</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="experience">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">02 / Background</div>
+        <h2><span class="zh">學歷與經歷</span><span class="en">Education & Experience</span></h2>
+      </div>
+      <div>
+        <h3 class="subheading"><span class="zh">教育背景</span><span class="en">Education</span></h3>
+        <div class="timeline">
+          <article class="entry">
+            <div class="date">2018–2025</div>
+            <h3 class="zh">國立中山大學｜企業管理博士，主修行銷</h3>
+            <h3 class="en">National Sun Yat-sen University | Ph.D. in Business Administration, Marketing</h3>
+            <p>Dissertation: Will I be the Next? Effects of Disease Cues on Superstitious Consumption</p>
+          </article>
+          <article class="entry">
+            <div class="date">2005–2007</div>
+            <h3 class="zh">國立高雄大學｜經濟管理研究所碩士，主修管理</h3>
+            <h3 class="en">National University of Kaohsiung | Master's Degree in Economics and Management</h3>
+          </article>
+          <article class="entry">
+            <div class="date">2001–2005</div>
+            <h3 class="zh">國立中山大學｜機械與機電工程學系工學士</h3>
+            <h3 class="en">National Sun Yat-sen University | Bachelor's Degree in Mechanical and Electro-Mechanical Engineering</h3>
+          </article>
+        </div>
+        <h3 class="subheading"><span class="zh">學術經歷</span><span class="en">Academic Experience</span></h3>
+        <div class="timeline">
+          <article class="entry">
+            <div class="date">2024.07–2025.02</div>
+            <h3>Beedie School of Business, Simon Fraser University</h3>
+            <p class="zh">訪問學者｜國科會千里馬計畫，核定編號113-2917-I-110-009。</p>
+            <p class="en">Visiting Scholar | Supported by the NSTC overseas research program, grant 113-2917-I-110-009.</p>
+          </article>
+          <article class="entry">
+            <h3 class="zh">國科會研究計畫參與</h3>
+            <h3 class="en">Research Project Participation</h3>
+            <p class="zh">參與生理期與女性消費行為、社會排擠與新奇消費、慈善廣告及產品圖像等研究計畫。</p>
+            <p class="en">Contributed to research projects on menstrual cycles and consumption, social exclusion and novelty seeking, charitable advertising, and product imagery.</p>
+          </article>
+        </div>
+        <h3 class="subheading"><span class="zh">產業經驗</span><span class="en">Industry Experience</span></h3>
+        <div class="timeline">
+          <article class="entry">
+            <div class="date">2018.04–2019.02 / 2021.02–</div>
+            <h3 class="zh">興勤電子｜專利工程師</h3>
+            <h3 class="en">Thinking Electronic Industrial Co., Ltd. | Patent Engineer</h3>
+          </article>
+          <article class="entry">
+            <div class="date">2012.03–2018.03</div>
+            <h3 class="zh">台一智權、瑞研科技、台虹、日月光｜專利工程師</h3>
+            <h3 class="en">Patent Engineering Experience</h3>
+            <p class="en">Previous roles at 台一智權, 瑞研科技, 台虹, and 日月光.</p>
+          </article>
+          <article class="entry">
+            <div class="date">2007.07–2009.08</div>
+            <h3 class="zh">東哥遊艇｜專案工程師</h3>
+            <h3 class="en">東哥遊艇 | Project Engineer</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="research">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">03 / Research</div>
+        <h2><span class="zh">研究與著作</span><span class="en">Research & Publications</span></h2>
+      </div>
+      <div>
+        <h3 class="subheading"><span class="zh">期刊論文</span><span class="en">Journal Articles</span></h3>
+        <article class="publication">
+          <p class="authors">Cheng, Zhao-Hong, and Chia-Han Chang</p>
+          <h3>Beyond the Click: Building Brand Bonds Through Online Customer Experience</h3>
+          <p class="pub-meta">2025 · Corporate Management Review, 45(2), 131–182. <span class="badge">TSSCI</span></p>
+        </article>
+        <article class="publication">
+          <p class="authors">Lee, Hsiao-Ching, Chun-Tuan Chang, Jia-Ling Lee, Chia-Han Chang, and Yu-Kang Lee</p>
+          <h3>Crying Victims Deserve More? How Victim Image, Facial Expression, Entitativity and Victim Story Impact Charity Advertising Persuasiveness</h3>
+          <p class="pub-meta">2023 · International Journal of Advertising, 43(7), 1280–1311. <span class="badge">SSCI</span></p>
+        </article>
+        <article class="publication">
+          <p class="authors">Chang, Chun-Tuan, Zhao-Hong Cheng, Yu-Kang Lee, and Chia-Han Chang</p>
+          <h3>A Close Look at Research on Pursuing the Right Formula for Cause-Related Marketing Advertising</h3>
+          <p class="pub-meta">2022 · International Journal of Advertising, 42(1), 1–13. <span class="badge">SSCI</span></p>
+        </article>
+        <article class="publication">
+          <p class="authors">Chang, Chun-Tuan, Yi-Chia Chen, and Chia-Han Chang</p>
+          <h3>Being Alone Deserves More Sympathy? Influences of Victim Number, Cause Acuteness and Individual Differences in Self-Construal on Charitable Advertising Effectiveness</h3>
+          <p class="pub-meta">2022 · NTU Management Review, 32(2), 85–122. <span class="badge">TSSCI</span></p>
+          <p class="pub-meta">Best Paper of the Issue</p>
+        </article>
+
+        <h3 class="subheading"><span class="zh">研究中論文</span><span class="en">Work in Progress</span></h3>
+        <article class="publication">
+          <p class="authors">Chang, Chia-Han, Chun-Tuan Chang, and Lily Lin</p>
+          <h3>Will I be Next? Effects of Disease Cues on Superstitious Consumption</h3>
+          <p class="pub-meta"><span class="zh">準備投稿 Psychology & Marketing（依提供之CV所載狀態）</span><span class="en">Manuscript in preparation for submission to Psychology & Marketing.</span></p>
+        </article>
+
+        <h3 class="subheading"><span class="zh">精選國際研討會</span><span class="en">Selected Conference Papers</span></h3>
+        <article class="publication">
+          <p class="authors">Cheng, Zhao-Hong, and Chia-Han Chang</p>
+          <h3>Not All AI Is Equal: Contrasting Task-Oriented and Relationship-Oriented AI in Relationship Marketing</h3>
+          <p class="pub-meta">2026 · AMA Winter Academic Conference · Madrid, Spain</p>
+        </article>
+        <article class="publication">
+          <p class="authors">Cheng, Zhao-Hong, and Chia-Han Chang</p>
+          <h3>Task-Oriented or Relationship-Oriented? Rethinking AI in Relationship Marketing</h3>
+          <p class="pub-meta">2026 · APCSSM · Nagoya, Japan · Poster Presentation</p>
+        </article>
+        <article class="publication">
+          <p class="authors">Chang, Chun-Tuan, Zhao-Hong Cheng, Chia-Han Chang, and Yu-Kang Lee</p>
+          <h3>I Just Want Something New! Social Exclusion Enhances Consumers’ Novelty-Seeking</h3>
+          <p class="pub-meta">2023 · Association for Consumer Research · Seattle, USA</p>
+        </article>
+        <article class="publication">
+          <p class="authors">Lee, Hsiao-Ching, Chun-Tuan Chang, Bo-Yun Jian, Chia-Han Chang, and Chan-Shen Chi</p>
+          <h3>When I Feel How a Turtle Feels: Switching Perspectives Enhances Consumer Ethical Behavior</h3>
+          <p class="pub-meta">2022 · Association for Consumer Research · Denver, USA</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="teaching">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">04 / Teaching</div>
+        <h2><span class="zh">可授課程</span><span class="en">Teaching Areas</span></h2>
+      </div>
+      <div>
+        <p class="zh">結合理論、數據分析與產業案例，培養學生理解消費者、分析市場及整合跨領域知識的能力。</p>
+        <p class="en">Integrating theory, data analysis, and industry cases to help students understand consumers, analyze markets, and apply interdisciplinary knowledge.</p>
+        <div class="course-grid">
+          <article class="course"><h3><span class="zh">消費者行為</span><span class="en">Consumer Behavior</span></h3></article>
+          <article class="course"><h3><span class="zh">消費心理與決策</span><span class="en">Consumer Psychology & Decision Making</span></h3></article>
+          <article class="course"><h3><span class="zh">數位行銷與消費者行為</span><span class="en">Digital Marketing & Consumer Behavior</span></h3></article>
+          <article class="course"><h3><span class="zh">創新、智慧財產與行銷</span><span class="en">Innovation, Intellectual Property & Marketing</span></h3></article>
+          <article class="course"><h3><span class="zh">AI驅動創新與市場應用</span><span class="en">AI-Driven Innovation & Market Applications</span></h3></article>
+          <article class="course"><h3><span class="zh">實驗設計</span><span class="en">Experimental Design</span></h3></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="collaboration">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">05 / Collaboration</div>
+        <h2><span class="zh">產學合作</span><span class="en">Industry Collaboration</span></h2>
+      </div>
+      <div>
+        <article class="collaboration">
+          <div class="date">2022</div>
+          <h3 class="zh">正修科技大學｜高等教育深耕計畫</h3>
+          <h3 class="en">Cheng Shiu University | Higher Education Sprout Project</h3>
+          <p class="zh">擔任產業專家，提供實務專題指導，協助學生連結學術理論與產業應用。</p>
+          <p class="en">Provided industry expertise and practical project guidance to help students connect academic theory with industry applications.</p>
+        </article>
+        <article class="collaboration">
+          <div class="date">2019</div>
+          <h3 class="zh">產業園區產學合作鏈結成效與滿意度調查</h3>
+          <h3 class="en">Industry–Academia Linkage and Satisfaction Survey</h3>
+          <p class="zh">參與經濟部工業局委託案，運用SPSS進行統計分析，協助撰寫最終分析報告。</p>
+          <p class="en">Contributed statistical analysis using SPSS and assisted with the final report for a project commissioned by the Industrial Development Bureau, Ministry of Economic Affairs.</p>
+        </article>
+        <article class="collaboration">
+          <div class="date">2018</div>
+          <h3 class="zh">東高雄觀光產業聯盟｜顧問</h3>
+          <h3 class="en">East Kaohsiung Tourism Industry Alliance | Consultant</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content contact" id="contact">
+    <div class="wrap section-grid">
+      <div>
+        <div class="section-label">06 / Contact</div>
+        <h2><span class="zh">聯絡方式</span><span class="en">Contact</span></h2>
+      </div>
+      <div>
+        <p class="zh">學術交流、研究與產學合作，歡迎來信。</p>
+        <p class="en">For academic exchange, research, and industry collaboration, please get in touch.</p>
+        <a href="mailto:mouce.chang@gmail.com">mouce.chang@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">張佳涵 · Chia-Han Chang</div>
+</footer>
+
+<script>
+document.getElementById('language').addEventListener('click',function(){
+  const english=document.documentElement.lang!=='en';
+  document.documentElement.lang=english?'en':'zh-Hant';
+  this.textContent=english?'中文':'English';
+  this.setAttribute('aria-label',english?'切換為中文':'Switch to English');
+});
+</script>
+</body>
+</html>
